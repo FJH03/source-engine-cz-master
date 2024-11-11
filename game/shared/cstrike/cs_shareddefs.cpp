@@ -27,11 +27,13 @@ CCSClassInfo g_ClassInfos[] =
 	{ "L337 KREW" },
 	{ "Arctic Avengers" },
 	{ "Guerilla Warfare" },
+	{ "MILITIA" },
 
 	{ "Seal Team 6" },
 	{ "GSG-9" },
 	{ "SAS" },
-	{ "GIGN" }
+	{ "GIGN" },
+	{ "SPETSNAZ" }
 };
 
 const CCSClassInfo* GetCSClassInfo( int i )
@@ -55,6 +57,7 @@ const char *CTPlayerModelStrings[] =
 	"models/player/ct_gsg9.mdl",
 	"models/player/ct_sas.mdl",
 	"models/player/ct_gign.mdl",
+	"models/player/ct_spetsnaz.mdl",
 };
 const char *TerroristPlayerModelStrings[] =
 {
@@ -62,6 +65,7 @@ const char *TerroristPlayerModelStrings[] =
 	"models/player/t_leet.mdl",
 	"models/player/t_arctic.mdl",
 	"models/player/t_guerilla.mdl",
+	"models/player/t_militia.mdl",
 };
 CUtlVectorInitialized< const char * > CTPlayerModels( CTPlayerModelStrings, ARRAYSIZE( CTPlayerModelStrings ) );
 CUtlVectorInitialized< const char * > TerroristPlayerModels( TerroristPlayerModelStrings, ARRAYSIZE( TerroristPlayerModelStrings ) );

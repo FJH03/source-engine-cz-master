@@ -7070,6 +7070,9 @@ void CCSPlayer::SwitchTeam( int iTeamNum )
 	case CS_CLASS_GUERILLA_WARFARE:
 		m_iClass = (int)CS_CLASS_GIGN;
 		break;
+	case CS_CLASS_MILITIA:
+		m_iClass = (int)CS_CLASS_SPETSNAZ;
+		break;
 
 	// CT -> Terrorist
 	case CS_CLASS_SEAL_TEAM_6:
@@ -7083,6 +7086,9 @@ void CCSPlayer::SwitchTeam( int iTeamNum )
 		break;
 	case CS_CLASS_GIGN:
 		m_iClass = (int)CS_CLASS_GUERILLA_WARFARE;
+		break;
+	case CS_CLASS_SPETSNAZ:
+		m_iClass = (int)CS_CLASS_MILITIA;
 		break;
 
 	case CS_CLASS_NONE:

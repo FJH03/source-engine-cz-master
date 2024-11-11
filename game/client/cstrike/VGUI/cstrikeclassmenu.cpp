@@ -123,10 +123,6 @@ void CClassMenu_TER::Update()
 	{
 		SetVisibleButton( "CancelButton", false ); 
 	}
-
-	// if we don't have the new models installed,
-	// turn off the militia and spetsnaz buttons
-	SetVisibleButton( "militia", false );
 }
 
 
@@ -205,10 +201,6 @@ void CClassMenu_CT::Update()
 	{
 		SetVisibleButton( "CancelButton", false ); 
 	}
-
-	// if we don't have the new models installed,
-	// turn off the militia and spetsnaz buttons
-	SetVisibleButton( "spetsnaz", false );
 }
 
 
