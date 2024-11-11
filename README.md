@@ -44,13 +44,14 @@ This project is using waf buildsystem. If you have waf-related questions look ht
 # How to Build?
 - [Building instructions(EN)](https://github.com/nillerusr/source-engine/wiki/Source-Engine-(EN))
 - [Building instructions(RU)](https://github.com/nillerusr/source-engine/wiki/Source-Engine-(RU))
-## Dedicated Server for Counter-Strike Source:
+- 
+## Dedicated Server for Counter-Strike Condition Zero Source:
 ###  Windows: 
     waf configure -T release --prefix ./build_server --build-games=cstrike -4 -d --disable-warns
 ###  Linux: 
     python3 waf configure -T release --prefix ./build_server --build-games=cstrike -4 -d --disable-warns
 
-## Game for Counter-Strike Source:
+## Game for Counter-Strike Condition Zero Source:
 ###  Windows: 
     waf configure -T release --prefix ./build_game --build-games=cstrike -4 --disable-warns
 ###  Linux: 
