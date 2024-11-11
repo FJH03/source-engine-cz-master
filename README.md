@@ -14,31 +14,11 @@ Source code is based on TF2 2018 leak. Don't use it for commercial purposes.
 
 This project is using waf buildsystem. If you have waf-related questions look https://waf.io/book
 
-# Features:
-- Android, OSX, FreeBSD, Windows, Linux( glibc, musl ) support
-- Arm support( except windows )
-- 64bit support
-- Modern toolchains support
-- Fixed many undefined behaviours
-- Touch support( even on windows/linux/osx )
-- VTF 7.5 support
-- PBR support
-- bsp v19-v21 support( bsp v21 support is partial, portal 2 and csgo maps works fine )
-- mdl v46-49 support
-- Removed useless/unnecessary dependencies
-- Achivement system working without steam
-- Fixed many bugs
-- Serverbrowser works without steam
-
 # Current tasks
-- Rewrite materialsystem for OpenGL render
-- dxvk-native support
-- Elbrus port
-- Bink audio support( for video_bink )
-- fix crouch anim state bugs in Android
-- fix thirdperson cam render
+- Need fix crouch anim state bugs in Android
+- Need fix thirdperson cam render
 
-# What this
+# What this?
 - czero character and design
 - source-engine protocol 26
 
@@ -59,10 +39,3 @@ This project is using waf buildsystem. If you have waf-related questions look ht
     python3 waf configure -T release --prefix ./build_game --build-games=cstrike -4 --disable-warns
 ###  Android: 
     export ANDROID_NDK_HOME="/home/fjh03/android-ndk-r10e" export PATH="/home/fjh03/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-16.04/bin:$PATH";CFLAGS="-O2" CXXFLAGS="-O2" LDFLAGS="-s -flto" python3 waf configure -T release --build-games=cstrike --togles --android=aarch64,host,21 --prefix=./cstrike_build --disable-warns
-
-# Support me
-BTC: `bc1qnjq92jj9uqjtafcx2zvnwd48q89hgtd6w8a6na`
-
-ETH: `0x5d0D561146Ed758D266E59B56e85Af0b03ABAF46`
-
-XMR: `48iXvX61MU24m5VGc77rXQYKmoww3dZh6hn7mEwDaLVTfGhyBKq2teoPpeBq6xvqj4itsGh6EzNTzBty6ZDDevApCFNpsJ`
