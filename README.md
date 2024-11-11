@@ -35,7 +35,8 @@ This project is using waf buildsystem. If you have waf-related questions look ht
 - dxvk-native support
 - Elbrus port
 - Bink audio support( for video_bink )
-- fix crouch anim state bugs
+- fix crouch anim state bugs in Android
+- fix thirdperson cam render
 
 # What this
 - czero character and design
@@ -44,7 +45,7 @@ This project is using waf buildsystem. If you have waf-related questions look ht
 # How to Build?
 - [Building instructions(EN)](https://github.com/nillerusr/source-engine/wiki/Source-Engine-(EN))
 - [Building instructions(RU)](https://github.com/nillerusr/source-engine/wiki/Source-Engine-(RU))
-- 
+
 ## Dedicated Server for Counter-Strike Condition Zero Source:
 ###  Windows: 
     waf configure -T release --prefix ./build_server --build-games=cstrike -4 -d --disable-warns
