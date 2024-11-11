@@ -44,13 +44,16 @@ This project is using waf buildsystem. If you have waf-related questions look ht
 # How to Build?
 - [Building instructions(EN)](https://github.com/nillerusr/source-engine/wiki/Source-Engine-(EN))
 - [Building instructions(RU)](https://github.com/nillerusr/source-engine/wiki/Source-Engine-(RU))
-- Dedicated Server for Counter-Strike Source:
-  Windows: waf configure -T release --prefix ./build_server --build-games=cstrike -4 -d --disable-warns
-  Linux: python3 waf configure -T release --prefix ./build_server --build-games=cstrike -4 -d --disable-warns
-- Game for Counter-Strike Source:
-  Windows: waf configure -T release --prefix ./build_game --build-games=cstrike -4 --disable-warns
-  Linux: python3 waf configure -T release --prefix ./build_game --build-games=cstrike -4 --disable-warns
-  Android: export ANDROID_NDK_HOME="/home/fjh03/android-ndk-r10e" export PATH="/home/fjh03/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-16.04/bin:$PATH";CFLAGS="-O2" CXXFLAGS="-O2" LDFLAGS="-s -flto" python3 waf configure -T release --build-games=cstrike --togles --android=aarch64,host,21 --prefix=./cstrike_build --disable-warns
+## Dedicated Server for Counter-Strike Source:
+###  Windows: waf configure -T release --prefix ./build_server --build-games=cstrike -4 -d --disable-warns
+###  Linux: python3 waf configure -T release --prefix ./build_server --build-games=cstrike -4 -d --disable-warns
+## Game for Counter-Strike Source:
+###  Windows: 
+    waf configure -T release --prefix ./build_game --build-games=cstrike -4 --disable-warns
+###  Linux: 
+    python3 waf configure -T release --prefix ./build_game --build-games=cstrike -4 --disable-warns
+###  Android: 
+    export ANDROID_NDK_HOME="/home/fjh03/android-ndk-r10e" export PATH="/home/fjh03/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-16.04/bin:$PATH";CFLAGS="-O2" CXXFLAGS="-O2" LDFLAGS="-s -flto" python3 waf configure -T release --build-games=cstrike --togles --android=aarch64,host,21 --prefix=./cstrike_build --disable-warns
 
 # Support me
 BTC: `bc1qnjq92jj9uqjtafcx2zvnwd48q89hgtd6w8a6na`
